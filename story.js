@@ -9,8 +9,8 @@ function checkAnswers(answer) {
     case "cabin":
       grabBandges();
       break;
-    case "scene2":
-      enterForest();
+    case "grabBandges":
+      grabHorse();
       break;
     case "ignore it and go home":
       homeEarly();
@@ -36,7 +36,11 @@ function grabBandages(){
 }
 //Grab Horse
 function grabHorse(){
-
+  story("You grabbed your horse and rode on your way to work, once arriving you jumped off the side of them and entered the guilds building.\
+  \nYou look at the wall to your right and see all the jobs that you can take, you see two that get your interest.\
+  \nTo slay a Minotaur and to slay Slime, which one should you pick?")
+  choices = ["Job 1 (to slay Minotaur)","Job 2 (to slay slimes)"];
+  answer = setOptions(choices);  
 }
 /* Old Code */
 
