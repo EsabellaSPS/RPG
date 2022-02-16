@@ -7,9 +7,9 @@ var scene1=cabin;
 function checkAnswers(answer) {
   switch(answer) {
     case "cabin":
-      thinkSomeMore();
+      grabBandges();
       break;
-    case "Make Options":
+    case "scene2":
       enterForest();
       break;
     case "ignore it and go home":
@@ -25,7 +25,19 @@ function cabin(){
   choices = ["Grab Bandages","Grab Bread"];
   answer = setOptions(choices);
 }
+//Grab Bandages
+function grabBandages(){
+  story("You grab the bandages and head out of your house, you look and see Marley.\
+  \nGiving him a carrot and petting his mane.\
+  \nYou are about to walk away from them but then you thought about it.\
+  \nMaybe you should take your horse to get to work, or would you rather walk.");
+  choices = ["Grab horse","Walk"];
+  answer = setOptions(choices);
+}
+//Grab Horse
+function grabHorse(){
 
+}
 /* Old Code */
 
 function town(){
