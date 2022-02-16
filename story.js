@@ -2,14 +2,14 @@
 
 // variables
 // var name = "";
-var scene1=town;
+var scene1=cabin;
 
 function checkAnswers(answer) {
   switch(answer) {
-    case "Think some more":
+    case "cabin":
       thinkSomeMore();
       break;
-    case "go into the forest":
+    case "Make Options":
       enterForest();
       break;
     case "ignore it and go home":
@@ -17,6 +17,16 @@ function checkAnswers(answer) {
       break;
     }
 }
+
+function cabin(){
+  story("You stretch out all of your muscles and stand up from your bed, and walk over to your closet and get dressed.\
+  \nGrabbing your sword within its sheath and attach it to your hip.\
+  \nYou look over to your table a polder on whether you should grab your bag of bread or bandages");
+  choices = ["Grab Bandages","Grab Bread"];
+  answer = setOptions(choices);
+}
+
+/* Old Code */
 
 function town(){
   // var name = prompt("what is your name?");
