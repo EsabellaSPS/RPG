@@ -34,7 +34,14 @@ function grabBandages(){
   choices = ["Grab horse","Walk"];
   answer = setOptions(choices);
 }
-//Grab Horse
+//Grab Bread
+function grabBread(){
+  story("You grab the bread and put it in your satchel. You head outside and see Marley.\
+    \nYou give him a carrot and pet his mane.\
+  \nYou are about to walk away from them but then you thought about it.\
+  \nMaybe you should take your horse to get to work, or would you rather walk.")
+}
+/*Grab Horse
 function grabHorse(){
   story("You grabbed your horse and rode on your way to work, once arriving you jumped off the side of them and entered the guilds building.\
   \nYou look at the wall to your right and see all the jobs that you can take, you see two that get your interest.\
@@ -42,6 +49,7 @@ function grabHorse(){
   choices = ["Job 1 (to slay Minotaur)","Job 2 (to slay slimes)"];
   answer = setOptions(choices);  
 }
+*/
 /* Old Code */
 
 function town(){
