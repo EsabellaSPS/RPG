@@ -6,11 +6,11 @@ var scene1=cabin;
 
 function checkAnswers(answer) {
   switch(answer) {
-    case "cabin":
-      grabBandges();
+    case "grabBandages":
+      grabBread();
       break;
-    case "grabBandges":
-      grabHorse();
+    case "grabHorse":
+      walk();
       break;
     case "ignore it and go home":
       homeEarly();
@@ -18,7 +18,7 @@ function checkAnswers(answer) {
     }
 }
 
-function cabin(){
+function scene1(){
   story("You stretch out all of your muscles and stand up from your bed, and walk over to your closet and get dressed.\
   \nGrabbing your sword within its sheath and attach it to your hip.\
   \nYou look over to your table a polder on whether you should grab your bag of bread or bandages");
@@ -40,8 +40,10 @@ function grabBread(){
     \nYou give him a carrot and pet his mane.\
   \nYou are about to walk away from them but then you thought about it.\
   \nMaybe you should take your horse to get to work, or would you rather walk.")
+  choices = ["Grab horse","Walk"];
+  answer = setOptions(choices);
 }
-/*Grab Horse
+//Grab Horse
 function grabHorse(){
   story("You grabbed your horse and rode on your way to work, once arriving you jumped off the side of them and entered the guilds building.\
   \nYou look at the wall to your right and see all the jobs that you can take, you see two that get your interest.\
@@ -49,7 +51,7 @@ function grabHorse(){
   choices = ["Job 1 (to slay Minotaur)","Job 2 (to slay slimes)"];
   answer = setOptions(choices);  
 }
-*/
+
 /* Old Code */
 
 function town(){
