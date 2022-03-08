@@ -6,8 +6,8 @@ var scene1=cabin;
 
 function checkAnswers(answer) {
   switch(answer) {
-    case "grabBandages":
-      grabBread();
+    case "Grab Bandages":
+      grabBandages();
       break;
     case "grabHorse":
       walk();
@@ -21,7 +21,7 @@ function checkAnswers(answer) {
 function scene1(){
   story("You stretch out all of your muscles and stand up from your bed, and walk over to your closet and get dressed.\
   \nGrabbing your sword within its sheath and attach it to your hip.\
-  \nYou look over to your table a polder on whether you should grab your bag of bread or bandages");
+  \nYou look over to your table a ponder on whether you should grab your bag of bread or bandages");
   choices = ["Grab Bandages","Grab Bread"];
   answer = setOptions(choices);
 }
