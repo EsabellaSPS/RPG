@@ -9,11 +9,14 @@ function checkAnswers(answer) {
     case "Grab Bandages":
       grabBandages();
       break;
-    case "grabHorse":
-      walk();
+    case "Grab Bread":
+      grabBread();
       break;
-    case "ignore it and go home":
-      homeEarly();
+    case "Grab horse":
+      grabHorse();
+      break;
+    case "Walk":
+      walk();
       break;
     }
 }
@@ -50,6 +53,15 @@ function grabHorse(){
   \nTo slay a Minotaur and to slay Slime, which one should you pick?")
   choices = ["Job 1 (to slay Minotaur)","Job 2 (to slay slimes)"];
   answer = setOptions(choices);  
+}
+//Walk
+function Walk() {
+  story(" You petted your horse, before starting your way to work.\
+  \nWalking half way through you stop and sit on the ground.\
+  \nPanting as your walk is still a ways to go, you get up from the ground and grab a water that you had stored in your bag and drink a bit before continuing on your walk to the guild.\
+  \nOnce getting there you grab a table that is closest to the missions board. Looking I can see slaying a Minotaur and to Slay slimes, standing up I grab?");
+  choices = ["Job 1 (to slay Minotaur)","Job 2 (to slay slimes)"];
+  answer = setOptions(choices);
 }
 
 /* Old Code */
