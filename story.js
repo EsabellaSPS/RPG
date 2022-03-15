@@ -18,6 +18,12 @@ function checkAnswers(answer) {
     case "Walk":
       walk();
       break;
+    case "Job 1 (to slay Minotaur)":
+      Job1();
+      break;
+    case "Job 2 (to slay slimes)":
+      Job2();
+      break;
     }
 }
 
@@ -56,13 +62,26 @@ function grabHorse(){
 }
 //Walk
 function Walk() {
-  story(" You petted your horse, before starting your way to work.\
+  story("You petted your horse, before starting your way to work.\
   \nWalking half way through you stop and sit on the ground.\
   \nPanting as your walk is still a ways to go, you get up from the ground and grab a water that you had stored in your bag and drink a bit before continuing on your walk to the guild.\
   \nOnce getting there you grab a table that is closest to the missions board. Looking I can see slaying a Minotaur and to Slay slimes, standing up I grab?");
   choices = ["Job 1 (to slay Minotaur)","Job 2 (to slay slimes)"];
   answer = setOptions(choices);
 }
+//Minotaur
+function Job1() {
+  story("You grab the Minotaur paper with the job description, Slay 3 minotaurs and bring back each one of their horns from each minotaur, Reward of 100 gold coins. I give a slight smile looking at the reward. I rolled it up and put it in my satchel. I headed my way to the area where minotaurs are found. I grab my sword from it’s hilt once arriving, Isee a minotaur and run towards it and slice it’s leg making it drop to one leg. Jumping back as it let out a huge roar, 4 other minotaurs appeared out of the forests. I tightened my grip on my sword and they all went attacking me besides the one that I had already stricked down. Their horns impaled my sides, tearing through my skin. I feel my arm feeling lighter and my legs weightless. My eyes slowly closed as the pain faded slowly as everything went dark.");
+  choices = ["Game Over"];
+  answer = setOptions(choices);
+}
+//Slime
+function Job2() {
+  story("You grab the paper that shows a slime, with the job description, You are to slay 50 acid slimes and gather their cores, bring them back to the guild and you'll be rewarded.You read this and start your way to head to the slime mines. Once entering you see a slime and it spits acid on your arm, you should?");
+  choices = ["Use Sword,Use Bandages"];
+  answer = setOptions(choices);
+}
+
 
 /* Old Code */
 
