@@ -18,11 +18,11 @@ function checkAnswers(answer) {
     case "Walk":
       walk();
       break;
-    case "Job 1 (to slay Minotaur)":
-      Job1();
+    case "Job one (to slay Minotaur)":
+      jobOne();
       break;
-    case "Job 2 (to slay slimes)":
-      Job2();
+    case "Job two (to slay slimes)":
+      jobTwo();
       break;
     }
 }
@@ -57,31 +57,46 @@ function grabHorse(){
   story("You grabbed your horse and rode on your way to work, once arriving you jumped off the side of them and entered the guilds building.\
   \nYou look at the wall to your right and see all the jobs that you can take, you see two that get your interest.\
   \nTo slay a Minotaur and to slay Slime, which one should you pick?");
-  choices = ["Job 1 (to slay Minotaur)","Job 2 (to slay slimes)"];
+  choices = ["Job one (to slay Minotaur)","Job two (to slay slimes)"];
   answer = setOptions(choices);  
 }
 //Walk
-function Walk() {
+function walk(){
   story("You petted your horse, before starting your way to work.\
   \nWalking half way through you stop and sit on the ground.\
   \nPanting as your walk is still a ways to go, you get up from the ground and grab a water that you had stored in your bag and drink a bit before continuing on your walk to the guild.\
   \nOnce getting there you grab a table that is closest to the missions board. Looking I can see slaying a Minotaur and to Slay slimes, standing up I grab?");
-  choices = ["Job 1 (to slay Minotaur)","Job 2 (to slay slimes)"];
+  choices = ["Job one (to slay Minotaur)","Job two (to slay slimes)"];
   answer = setOptions(choices);
 }
 //Minotaur
-function Job1() {
-  story("You grab the Minotaur paper with the job description, Slay 3 minotaurs and bring back each one of their horns from each minotaur, Reward of 100 gold coins. I give a slight smile looking at the reward. I rolled it up and put it in my satchel. I headed my way to the area where minotaurs are found. I grab my sword from it’s hilt once arriving, Isee a minotaur and run towards it and slice it’s leg making it drop to one leg. Jumping back as it let out a huge roar, 4 other minotaurs appeared out of the forests. I tightened my grip on my sword and they all went attacking me besides the one that I had already stricked down. Their horns impaled my sides, tearing through my skin. I feel my arm feeling lighter and my legs weightless. My eyes slowly closed as the pain faded slowly as everything went dark.");
+function jobOne(){
+  story("You grab the Minotaur paper with the job description, Slay 3 minotaurs and bring back each one of their horns from each minotaur, Reward of 100 gold coins.\
+    \nI give a slight smile looking at the reward. I rolled it up and put it in my satchel.\
+    \nI headed my way to the area where minotaurs are found.\
+    \nI grab my sword from it’s hilt once arriving, I see a minotaur and run towards it and slice it’s leg making it drop to one leg.\
+    \nJumping back as it let out a huge roar, 4 other minotaurs appeared out of the forests.\
+    \nI tightened my grip on my sword and they all went attacking me besides the one that I had already stricked down.\
+    \nTheir horns impaled my sides, tearing through my skin.\
+    \nI feel my arm feeling lighter and my legs weightless. My eyes slowly closed as the pain faded slowly as everything went dark.");
   choices = ["Game Over"];
   answer = setOptions(choices);
 }
 //Slime
-function Job2() {
-  story("You grab the paper that shows a slime, with the job description, You are to slay 50 acid slimes and gather their cores, bring them back to the guild and you'll be rewarded.You read this and start your way to head to the slime mines. Once entering you see a slime and it spits acid on your arm, you should?");
-  choices = ["Use Sword,Use Bandages"];
+function jobTwo() {
+  story("You grab the paper that shows a slime, with the job description, You are to slay 50 acid slimes and gather their cores, bring them back to the guild and you'll be rewarded.\
+    \nYou read this and start your way to head to the slime mines. Once entering you see a slime and it spits acid on your arm, you should?");
+  choices = ["Use Sword","Use Bandages"];
   answer = setOptions(choices);
 }
 
+function gameover(){
+  story("You have died, you can restart the game by clicking below. For now you are dead though.\
+    \nYou will have fun with this in once you get the rythem you'll never die again but, for now you should restart.\
+    \nSee you in your new life hope you don't die next round.");
+  choices = ["Restart"];
+  answer = setOptions(choices);
+}
 
 /* Old Code */
 
