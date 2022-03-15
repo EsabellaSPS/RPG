@@ -29,7 +29,7 @@ function checkAnswers(answer) {
 
 function scene1(){
   story("You stretch out all of your muscles and stand up from your bed, and walk over to your closet and get dressed.\
-  \nGrabbing your sword within its sheath and attach it to your hip.\
+  \nGrabbing your sword within its sheath you attach it to your hip.\
   \nYou look over to your table a ponder on whether you should grab your bag of bread or bandages");
   choices = ["Grab Bandages","Grab Bread"];
   answer = setOptions(choices);
@@ -89,7 +89,7 @@ function jobTwo() {
   choices = ["Use Sword","Use Bandages"];
   answer = setOptions(choices);
 }
-
+//Game over Command, if needed edit but fine for now. 
 function gameover(){
   story("You have died, you can restart the game by clicking below. For now you are dead though.\
     \nYou will have fun with this in once you get the rythem you'll never die again but, for now you should restart.\
