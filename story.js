@@ -24,10 +24,16 @@ function checkAnswers(answer) {
     case "Job two (to slay slimes)":
       jobTwo();
       break;
+    case "Use Sword":
+      swords();
+    break;
+    case "Game Over":
+      gameOver();
+    break;
     }
 }
 
-function scene1(){
+function cabin(){
   story("You stretch out all of your muscles and stand up from your bed, and walk over to your closet and get dressed.\
   \nGrabbing your sword within its sheath you attach it to your hip.\
   \nYou look over to your table a ponder on whether you should grab your bag of bread or bandages");
@@ -89,55 +95,37 @@ function jobTwo() {
   choices = ["Use Sword","Use Bandages"];
   answer = setOptions(choices);
 }
+//Use Sword
+function swords() {
+  story("You grab your sword from its hilt and swing the sword at the slimes, once they were killed you looked in your bag and grabbed your bandages \”\ Good thing I had these, I would have totally been a goner\”\ . \
+    \nAfter bandaging your arm you put your sword in its hilt and start to gather all the slime cores from the ground.\
+    \nYou realize you have the 25 cores that you need and head back to the guild’s area. Opening the door you see a bunch of people inside each having completed their own missions and partying with their own groups.\
+    \nI walk to the front counter and hand her the bag full of cores, she hands me 15 silver coins.\
+    \nI give her a small smile and walk to a table not before grabbing a drink and food.\
+    \nAt the end of the night you decide to head back home, you look up at the moon high up in the sky and smile. \”\ Today was a good day, I wish tomorrow to be like this as well.\”\ \
+    \nOnce getting home you walk to your room and change into your PJ’s, laying down in your bed you get comfortable and then you sleep.");
+  choices = ["The End"];
+  answer = setOptions(choices);
+}
+//Using Bandages
+function useBandages() {
+  story("You quickly run out of the cave and grab your bandages out of your bag. You quickly bandage your arm, \”\ Good thing I had these, I would have totally been a goner\”\. Walking back inside you grab your sword from its hilt and swing the sword at the slimes, once they are killed you put your sword in its hilt and start to gather all the slime cores from the ground. You realize you have the 25 cores that you need and head back to the guild’s area. Opening the door you see a bunch of people inside each having completed their own missions and partying with their own groups. I walk to the front counter and hand her the bag full of cores, she hands me 15 silver coins. I give her a small smile and walk to a table not before grabbing a drink and food. At the end of the night you decide to head back home, you look up at the moon high up in the sky and smile. \”\ Today was a good day, I hope tomorrow to be like this as well.\”\ Once getting home you walk to your room and change into your PJ’s, laying down in your bed you get comfortable and then you sleep.");
+  choices = ["The End"];
+  answer = setOptions(choices);
+}
 //Game over Command, if needed edit but fine for now. 
-function gameover(){
-  story("You have died, you can restart the game by clicking below. For now you are dead though.\
-    \nYou will have fun with this in once you get the rythem you'll never die again but, for now you should restart.\
-    \nSee you in your new life hope you don't die next round.");
+function gameOver() {
+  story("You have died, you can restart the game by clicking below.\
+  \nFor now you are dead though.You will have fun with this once you get the rhythm you'll never die again but, for now you should restart.\
+  \nSee you in your new life hope you don't die this next round. Survive and find your second end. Good Luck brave adventurer.");
   choices = ["Restart"];
   answer = setOptions(choices);
 }
-
-/* Old Code */
-
-function town(){
-  // var name = prompt("what is your name?");
-  story("One day you are on your way home from school and you hear a whisper coming from a dark forest you never remember seeing before.\
-  \n\"Come here Come here!\"\
-  \nit says. You can't place the voice, but there is something familiar about it. What do you do?");
-  choices = ["Think some more", "go into the forest", "ignore it and go home"];
+//The end, Good ending basically
+function theEnd() {
+  story("You Survived! This is the end of today's adventure, I hope that it was a fun adventure.\
+  \nYou deserve the best after all! You can reset this and try again but there are only two ends.\
+  \nSleep well, yeah? Get rest before your next adventure!");
+  choices = ["Restart"];
   answer = setOptions(choices);
-}
-
-// Places
-function thinkSomeMore() {
-  story("You think about it some more and are sure this forest was not here yesterday.  \
-  \nWhere did it come from and how does it know your name?\
-  \nWhat do you want to do?");
-  choices = ["go into the forest", "ignore it and go home"];
-  answer = setOptions(choices);
-}
-
-function enterForest() {
-    story("You enter the forest and soon become hopefully lost.\
-    \nWhile you can't find your way out you do see a few places of interest.");
-    forest();
-}
-
-function forest() {
-  story("There is a house made of candy.\
-  \nThere is a fruit vender.\
-  \nThere is a small opening in the trees with a ring of mushroom in the middle.");
-  choices = ["Think some more", "ignore it and go home"];
-  answer = setOptions(choices);
-}
-
-function homeEarly() {
-  var messages = ['You ignore it and walk home.',
-    'Nothing exciting happens to you one the way.',
-    "That was a very boring story, but you must be a boring person for having chosen to go home.",
-    "If it was me there is no way I am passing up the chance to check out a new forest that just happens over night.",
-    "To each his own I guess."
-  ];
-  delayText(messages, 1000);
 }
