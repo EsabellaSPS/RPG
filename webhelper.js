@@ -10,7 +10,7 @@ var answer;
 
 function start() {
   setup();
-  scene1();
+  cabin();
 }
 
 function setup() {
