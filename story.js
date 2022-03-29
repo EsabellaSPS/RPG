@@ -27,8 +27,8 @@ function checkAnswers(answer) {
     case "Use Sword":
       swords();
     break;
-    case "Use Bandages"
-      useBandages()
+    case "Use Bandages":
+      useBandages();
     break;
     case "Game Over":
       gameOver();
