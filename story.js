@@ -51,6 +51,7 @@ function cabin(){
 }
 //Grab Bandages
 function grabBandages(){
+  addImage("https://cdn.pixabay.com/photo/2017/12/10/15/16/white-horse-3010129__480.jpg");
   story("You grab the bandages and head out of your house, you look and see Marley.\
   \nGiving him a carrot and petting his mane.\
   \nYou are about to walk away from them but then you thought about it.\
