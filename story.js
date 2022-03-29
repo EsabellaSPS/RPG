@@ -27,8 +27,17 @@ function checkAnswers(answer) {
     case "Use Sword":
       swords();
     break;
+    case "Use Bandages"
+      useBandages()
+    break;
     case "Game Over":
       gameOver();
+    break;
+    case "The End":
+      theEnd();
+    break;
+    case "Restart":
+      cabin();
     break;
     }
 }
@@ -109,7 +118,15 @@ function swords() {
 }
 //Using Bandages
 function useBandages() {
-  story("You quickly run out of the cave and grab your bandages out of your bag. You quickly bandage your arm, \”\ Good thing I had these, I would have totally been a goner\”\. Walking back inside you grab your sword from its hilt and swing the sword at the slimes, once they are killed you put your sword in its hilt and start to gather all the slime cores from the ground. You realize you have the 25 cores that you need and head back to the guild’s area. Opening the door you see a bunch of people inside each having completed their own missions and partying with their own groups. I walk to the front counter and hand her the bag full of cores, she hands me 15 silver coins. I give her a small smile and walk to a table not before grabbing a drink and food. At the end of the night you decide to head back home, you look up at the moon high up in the sky and smile. \”\ Today was a good day, I hope tomorrow to be like this as well.\”\ Once getting home you walk to your room and change into your PJ’s, laying down in your bed you get comfortable and then you sleep.");
+  story("You quickly run out of the cave and grab your bandages out of your bag.\
+  \nYou quickly bandage your arm, \”\ Good thing I had these, I would have totally been a goner\”\.\
+  \nWalking back inside you grab your sword from its hilt and swing the sword at the slimes, once they are killed you put your sword in its hilt and start to gather all the slime cores from the ground.\
+  \nYou realize you have the 25 cores that you need and head back to the guild’s area.\
+  \nOpening the door you see a bunch of people inside each having completed their own missions and partying with their own groups.\
+  \nI walk to the front counter and hand her the bag full of cores, she hands me 15 silver coins.\
+  \nI give her a small smile and walk to a table not before grabbing a drink and food.\
+  \nAt the end of the night you decide to head back home, you look up at the moon high up in the sky and smile. \”\ Today was a good day, I hope tomorrow to be like this as well.\”\ \
+  \nOnce getting home you walk to your room and change into your PJ’s, laying down in your bed you get comfortable and then you sleep.");
   choices = ["The End"];
   answer = setOptions(choices);
 }
