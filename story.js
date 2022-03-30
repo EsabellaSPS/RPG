@@ -105,7 +105,7 @@ function jobOne(){
 }
 //Slime
 function jobTwo() {
-  addImage("");
+  addImage("https://cdllife.com/wp-content/uploads/2012/10/The-Blob-1988-CDL-Life.jpg");
   story("You grab the paper that shows a slime, with the job description, You are to slay 50 acid slimes and gather their cores, bring them back to the guild and you'll be rewarded.\
     \nYou read this and start your way to head to the slime mines. Once entering you see a slime and it spits acid on your arm, you should?");
   choices = ["Use Sword","Use Bandages"];
