@@ -43,6 +43,7 @@ function checkAnswers(answer) {
 }
 
 function cabin(){
+  addImage("https://i.ytimg.com/vi/jipME-yoUO0/maxresdefault.jpg");
   story("You stretch out all of your muscles and stand up from your bed, and walk over to your closet and get dressed.\
   \nGrabbing your sword within its sheath you attach it to your hip.\
   \nYou look over to your table a ponder on whether you should grab your bag of bread or bandages");
@@ -61,6 +62,7 @@ function grabBandages(){
 }
 //Grab Bread
 function grabBread(){
+  addImage("https://cdn.pixabay.com/photo/2017/12/10/15/16/white-horse-3010129__480.jpg");
   story("You grab the bread and put it in your satchel. You head outside and see Marley.\
     \nYou give him a carrot and pet his mane.\
   \nYou are about to walk away from them but then you thought about it.\
@@ -70,6 +72,7 @@ function grabBread(){
 }
 //Grab Horse
 function grabHorse(){
+  addImage("https://www.deephollowranch.com/wp-content/uploads/2022/01/Camarillo.jpg");
   story("You grabbed your horse and rode on your way to work, once arriving you jumped off the side of them and entered the guilds building.\
   \nYou look at the wall to your right and see all the jobs that you can take, you see two that get your interest.\
   \nTo slay a Minotaur and to slay Slime, which one should you pick?");
@@ -78,6 +81,7 @@ function grabHorse(){
 }
 //Walk
 function walk(){
+  addImage("https://post.healthline.com/wp-content/uploads/2020/09/928-Heavy_Breathing-732x549-thumbnail.jpg");
   story("You petted your horse, before starting your way to work.\
   \nWalking half way through you stop and sit on the ground.\
   \nPanting as your walk is still a ways to go, you get up from the ground and grab a water that you had stored in your bag and drink a bit before continuing on your walk to the guild.\
@@ -87,6 +91,7 @@ function walk(){
 }
 //Minotaur
 function jobOne(){
+  addImage("https://t4.ftcdn.net/jpg/00/85/84/25/360_F_85842532_rwFjW9LTmM93FFc2IfkDI708NDPQK881.jpg");
   story("You grab the Minotaur paper with the job description, Slay 3 minotaurs and bring back each one of their horns from each minotaur, Reward of 100 gold coins.\
     \nI give a slight smile looking at the reward. I rolled it up and put it in my satchel.\
     \nI headed my way to the area where minotaurs are found.\
@@ -100,6 +105,7 @@ function jobOne(){
 }
 //Slime
 function jobTwo() {
+  addImage("");
   story("You grab the paper that shows a slime, with the job description, You are to slay 50 acid slimes and gather their cores, bring them back to the guild and you'll be rewarded.\
     \nYou read this and start your way to head to the slime mines. Once entering you see a slime and it spits acid on your arm, you should?");
   choices = ["Use Sword","Use Bandages"];
@@ -107,6 +113,7 @@ function jobTwo() {
 }
 //Use Sword
 function swords() {
+  addImage("https://www.worldhistory.org/img/r/p/500x600/8870.jpg?v=1616515202");
   story("You grab your sword from its hilt and swing the sword at the slimes, once they were killed you looked in your bag and grabbed your bandages \”\ Good thing I had these, I would have totally been a goner\”\ . \
     \nAfter bandaging your arm you put your sword in its hilt and start to gather all the slime cores from the ground.\
     \nYou realize you have the 25 cores that you need and head back to the guild’s area. Opening the door you see a bunch of people inside each having completed their own missions and partying with their own groups.\
@@ -119,6 +126,7 @@ function swords() {
 }
 //Using Bandages
 function useBandages() {
+  addImage("https://image1.masterfile.com/getImage/NjQ5LTA2NDMyOTcyZW4uMDAwMDAwMDA=AL21mb/649-06432972en_Masterfile.jpg");
   story("You quickly run out of the cave and grab your bandages out of your bag.\
   \nYou quickly bandage your arm, \”\ Good thing I had these, I would have totally been a goner\”\.\
   \nWalking back inside you grab your sword from its hilt and swing the sword at the slimes, once they are killed you put your sword in its hilt and start to gather all the slime cores from the ground.\
@@ -133,6 +141,7 @@ function useBandages() {
 }
 //Game over Command, if needed edit but fine for now. 
 function gameOver() {
+  addImage("https://thumbs.dreamstime.com/b/simple-plain-game-over-screen-carousel-colors-red-green-blue-yellow-big-characters-game-over-big-bit-carousel-plain-203618420.jpg");
   story("You have died, you can restart the game by clicking below.\
   \nFor now you are dead though.You will have fun with this once you get the rhythm you'll never die again but, for now you should restart.\
   \nSee you in your new life hope you don't die this next round. Survive and find your second end. Good Luck brave adventurer.");
@@ -141,6 +150,7 @@ function gameOver() {
 }
 //The end, Good ending basically
 function theEnd() {
+  addImage("https://s3.envato.com/files/38938444/end%20title%20590.jpg");
   story("You Survived! This is the end of today's adventure, I hope that it was a fun adventure.\
   \nYou deserve the best after all! You can reset this and try again but there are only two ends.\
   \nSleep well, yeah? Get rest before your next adventure!");
