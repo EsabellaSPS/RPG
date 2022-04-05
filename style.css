@@ -50,6 +50,6 @@ button {
   margin-left: 19px;
 }
 
-button .hover {
+button:hover {
   background-color: skyblue;
 }
