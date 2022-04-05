@@ -26,7 +26,6 @@ body{
   margin-bottom: 20px;
   margin-right: 14px;
   margin-left: 14px;
-  height:60%;
 }
 
 select {
@@ -49,4 +48,8 @@ button {
   margin-bottom: 9px;
   margin-right: 19px;
   margin-left: 19px;
+}
+
+button .hover {
+  background-color: skyblue;
 }
