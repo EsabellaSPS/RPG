@@ -7,7 +7,7 @@ body,button,select {
 }
 
 body{
-    background: black url("background.png") no-repeat fixed center;
+    background: black url("background.png") no-repeat fixed top center;
 }
 
 #border{
@@ -16,8 +16,9 @@ body{
   padding: 10px;
   border-radius: 25px;
   width: 60%;
-  margin-right: 20%;
-  margin-left: 20%;
+  margin: 40px auto;
+  padding-top: 20px;
+  display: block; 
 }
 
 #currentStory {
@@ -45,7 +46,7 @@ select {
 
 button {
   width: 95%;
-  height: 90px;
+  padding: 10px;
   font-size: 25px;
   background-color: rgb(212, 239, 223  );
   margin-top: 2px;
@@ -55,5 +56,5 @@ button {
 }
 
 button:hover {
-  background-color: skyblue;
+  background-color: #52ffff;
 }
